@@ -13,5 +13,6 @@ public class Main {
   
     WebDriver driver = new FirefoxDriver(options);
     driver.get("https://www.google.com");
+
   }
 }
