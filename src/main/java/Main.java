@@ -12,7 +12,7 @@ public class Main {
     FirefoxOptions options = new FirefoxOptions();
   
     WebDriver driver = new FirefoxDriver(options);
-    driver.get("https://www.google.com");
+    driver.get("https://legacy.curseforge.com/");
 
   }
 }
