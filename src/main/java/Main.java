@@ -6,6 +6,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
@@ -24,11 +25,29 @@ public class Main {
     WebDriverWait wait = new WebDriverWait(driver, 10);
 
     WebElement tarjeta = driver.findElement(By.className("flex-steady"));
-   // wait.until(ExpectedConditions.elementToBeClickable(tarjeta));
+    // wait.until(ExpectedConditions.elementToBeClickable(tarjeta));
     tarjeta.click();
 
-//    List<WebElement> elements = driver.findElements(By.className("flex-steady"));
+    // Nombre de los Mod's
+    List<WebElement> nameElements = driver.findElements(By.className("text-lg"));
 
+    for (WebElement element : nameElements) {
+      String nombre = element.getText();
+      if (!nombre.equals("Install") && !nombre.equals("Minecraft") && !nombre.equals("All Modpacks") && !nombre.equals("Become an author") && !nombre.equals("Share content and earn points towards our rewards program")) {
+        System.out.println(nombre);
+      }
+    }
+
+
+//    Nombre del creardor los Mod's
+//    List<WebElement> creatornameElements = driver.findElements(By.className("hover:no-underline"));
+//
+//    for (WebElement element : creatornameElements) {
+//      String nombre = element.getText();
+//      System.out.println(nombre);
+//    }
+
+    driver.quit();
 
   }
 }
