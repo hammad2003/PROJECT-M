@@ -24,6 +24,14 @@ public class Main {
 
     WebDriverWait wait = new WebDriverWait(driver, 10);
 
+
+    driver.switchTo().frame("sp_message_iframe_905599");
+    WebElement noticia = driver.findElement(By.xpath("/html/body/div/div[2]/div[5]/button[2]"));
+
+    //    wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.className("message-component"))));
+    //    WebElement noticia = driver.findElement(By.className("message-component"));
+    //    noticia.click();
+
     WebElement tarjeta = driver.findElement(By.className("flex-steady"));
     // wait.until(ExpectedConditions.elementToBeClickable(tarjeta));
     tarjeta.click();
@@ -39,13 +47,13 @@ public class Main {
     }
 
 
-//    Nombre del creardor los Mod's
-//    List<WebElement> creatornameElements = driver.findElements(By.className("hover:no-underline"));
-//
-//    for (WebElement element : creatornameElements) {
-//      String nombre = element.getText();
-//      System.out.println(nombre);
-//    }
+    // Nombre del creardor los Mod's
+    List<WebElement> creatornameElements = driver.findElements(By.className("hover:no-underline"));
+
+    for (WebElement element : creatornameElements) {
+      String nombre = element.getText();
+      System.out.println(nombre);
+    }
 
     driver.quit();
 
