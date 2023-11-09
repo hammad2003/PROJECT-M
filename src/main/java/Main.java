@@ -26,15 +26,14 @@ public class Main {
 
 
     driver.switchTo().frame("sp_message_iframe_905599");
-    WebElement noticia = driver.findElement(By.xpath("/html/body/div/div[2]/div[5]/button[2]"));
 
-    //    wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(By.className("message-component"))));
-    //    WebElement noticia = driver.findElement(By.className("message-component"));
-    //    noticia.click();
+    WebElement elementoEnIframe = driver.findElement(By.xpath("/html/body/div/div[2]/div[5]/button[2]"));
+    elementoEnIframe.click();
 
     WebElement tarjeta = driver.findElement(By.className("flex-steady"));
     // wait.until(ExpectedConditions.elementToBeClickable(tarjeta));
     tarjeta.click();
+
 
     // Nombre de los Mod's
     List<WebElement> nameElements = driver.findElements(By.className("text-lg"));
