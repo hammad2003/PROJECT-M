@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Main {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws InterruptedException {
     System.out.println(System.getenv("PATH"));
     System.out.println(System.getenv("HOME"));
 
@@ -20,36 +20,39 @@ public class Main {
     options.setBinary("/usr/bin/firefox");
   
     WebDriver driver = new FirefoxDriver(options);
-    driver.get("https://legacy.curseforge.com/");
+    driver.get("https://curseforge.com/");
+
 
     WebDriverWait wait = new WebDriverWait(driver, 10);
 
 
-    driver.switchTo().frame("sp_message_iframe_905599");
+    // Privacy Notice Acept
 
-    WebElement elementoEnIframe = driver.findElement(By.xpath("/html/body/div/div[2]/div[5]/button[2]"));
-    elementoEnIframe.click();
+	Thread.sleep(10000);
 
-    WebElement tarjeta = driver.findElement(By.className("flex-steady"));
-    // wait.until(ExpectedConditions.elementToBeClickable(tarjeta));
-    tarjeta.click();
+    WebElement botonEnIframe = driver.findElement(By.id("cookiebar-ok"));
+	botonEnIframe.click();
+
+
+    WebElement divElementMine = driver.findElement(By.xpath("/html/body/div[1]/main/div/section[1]/div/ul/li[1]/a"));
+    divElementMine.click();
 
 
     // Nombre de los Mod's
-    List<WebElement> nameElements = driver.findElements(By.className("text-lg"));
+    List<WebElement> nameElements = driver.findElements(By.className("ellipsis"));
 
     for (WebElement element : nameElements) {
       String nombre = element.getText();
-      if (!nombre.equals("Install") && !nombre.equals("Minecraft") && !nombre.equals("All Modpacks") && !nombre.equals("Become an author") && !nombre.equals("Share content and earn points towards our rewards program")) {
+      if (!nombre.equals("By")) {
         System.out.println(nombre);
       }
     }
 
 
-    // Nombre del creardor los Mod's
-    List<WebElement> creatornameElements = driver.findElements(By.className("hover:no-underline"));
+    //  Nombre del Autor
+    List<WebElement> autorElements = driver.findElements(By.className("author"));
 
-    for (WebElement element : creatornameElements) {
+    for (WebElement element : autorElements) {
       String nombre = element.getText();
       System.out.println(nombre);
     }
