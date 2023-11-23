@@ -29,7 +29,6 @@ public class Main {
     WebDriverWait wait = new WebDriverWait(driver, 10);
 
 
-    // Privacy Notice Acept
 
 //	Thread.sleep(8000);
 //
@@ -44,6 +43,7 @@ public class Main {
 
     Thread.sleep(10000);
 
+    // Privacy Notice Acept
     WebElement botonPrivacidadInicio = driver.findElement(By.id("cookiebar-ok"));
     botonPrivacidadInicio.click();
 
@@ -66,24 +66,15 @@ public class Main {
       driver.get(juegosLink);
       Thread.sleep(2000);
 
-        // Nombre de los Mod's
-        List<WebElement> nameElements = driver.findElements(By.className("ellipsis"));
 
-        for (WebElement element : nameElements) {
-          String nombre = element.getText();
-          if (!nombre.equals("By")) {
-            System.out.println(nombre);
-          }
+        //  Nombre del Autor y del Mod
+        List<WebElement> byautors = driver.findElements(By.className("details"));
 
-          //  Nombre del Autor
-//          List<WebElement> byautors = driver.findElements(By.className("author"));
-//
-//          for (WebElement autorElements : byautors) {
-//            System.out.println(autorElements.findElement(By.className("by-author-link")).getText().replaceAll("\\n", " ").replaceAll("\\r", "") + autorElements.findElement(By.className("ellipsis")).getText());
-//          }
-
-
+        for (WebElement autorElements : byautors) {
+          System.out.println(autorElements.findElement(By.tagName("h3")).getText());
+          System.out.println(autorElements.findElement(By.className("by-author-link")).getText().replaceAll("\\n", " ").replaceAll("\\r", "") + autorElements.findElement(By.className("ellipsis")).getText() + "\n");
         }
+
 
     }
 
