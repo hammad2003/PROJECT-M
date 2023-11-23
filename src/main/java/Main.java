@@ -46,28 +46,6 @@ public class Main {
 
     WebElement botonPrivacidadInicio = driver.findElement(By.id("cookiebar-ok"));
     botonPrivacidadInicio.click();
-//
-//    WebElement botonPrivacidadJuegos = driver.findElement(By.id("cookiebar-ok"));
-//    botonPrivacidadJuegos.click();
-
-//    WebElement divElementMine = wait.until(ExpectedConditions.elementToBeClickable(By.className("view-all-link")));
-//    divElementMine.click();
-
-    // Nombre de todos los Juegos
-
-//    WebElement divElemednt = driver.findElement(By.className(" game-tile"));
-//    List<WebElement> nameElements = driver.findElements(By.tagName("h3"));
-//
-//    for (WebElement element : nameElements) {
-//      String nombre = element.getText();
-//      System.out.println(nombre);
-//    }
-
-//    WebElement divElement = driver.findElement(By.tagName("h3"));
-//    String nombre = divElement.getText();
-//    System.out.println(nombre);
-
-
 
 
 // Encuentra el elemento <div> con la clase "browse-module"
@@ -76,59 +54,41 @@ public class Main {
 // Dentro del elemento <div>, busca el elemento <ul>
     List<WebElement> tittle = divElement.findElements(By.className("game-tile"));
 
-    for (WebElement a : tittle) {
-      System.out.println(a.findElement(By.tagName("h3")).getText());
+    for (WebElement titulosJuego : tittle) {
+      System.out.println(titulosJuego.findElement(By.tagName("h3")).getText());
     }
 
     for (WebElement a : tittle) {
       links.add(a.getAttribute("href"));
     }
 
-    for (String a:links) {
-      driver.get(a);
+    for (String juegosLink : links) {
+      driver.get(juegosLink);
       Thread.sleep(2000);
+
+        // Nombre de los Mod's
+        List<WebElement> nameElements = driver.findElements(By.className("ellipsis"));
+
+        for (WebElement element : nameElements) {
+          String nombre = element.getText();
+          if (!nombre.equals("By")) {
+            System.out.println(nombre);
+          }
+
+          //  Nombre del Autor
+//          List<WebElement> byautors = driver.findElements(By.className("author"));
+//
+//          for (WebElement autorElements : byautors) {
+//            System.out.println(autorElements.findElement(By.className("by-author-link")).getText().replaceAll("\\n", " ").replaceAll("\\r", "") + autorElements.findElement(By.className("ellipsis")).getText());
+//          }
+
+
+        }
+
     }
 
-// Dentro del elemento <ul>, busca todos los elementos <li>
-    //List<WebElement> liElements = ulElement.findElements(By.tagName("li"));
-
-// Itera sobre los elementos <li>
-    /*for (WebElement liElement : liElements) {
-      // Dentro de cada <li>, busca el elemento <a> con la clase "game-tile"
-      WebElement aElement = liElement.findElement(By.className("game-tile"));
-
-      // Dentro del elemento <a>, busca el elemento <h3>
-      WebElement h3Element = aElement.findElement(By.tagName("h3"));
-
-      // Obtiene el texto del elemento <h3>
-      String nombre = h3Element.getText();
-
-      // Imprime el resultado
-      System.out.println(nombre);
-    }*/
 
 
-
-
-
-//    // Nombre de los Mod's
-//    List<WebElement> nameElements = driver.findElements(By.className("ellipsis"));
-//
-//    for (WebElement element : nameElements) {
-//      String nombre = element.getText();
-//      if (!nombre.equals("By")) {
-//        System.out.println(nombre);
-//      }
-//    }
-//
-//
-//    //  Nombre del Autor
-//    List<WebElement> autorElements = driver.findElements(By.className("author"));
-//
-//    for (WebElement element : autorElements) {
-//      String nombre = element.getText();
-//      System.out.println(nombre);
-//    }
 
     driver.quit();
 
