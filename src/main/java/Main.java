@@ -20,22 +20,11 @@ public class Main {
     FirefoxOptions options = new FirefoxOptions();
     options.setBinary("/usr/bin/firefox");
 
-    List<String> links = new ArrayList<>();
-
     WebDriver driver = new FirefoxDriver(options);
     driver.get("https://curseforge.com/");
 
 
     WebDriverWait wait = new WebDriverWait(driver, 10);
-
-
-
-//	Thread.sleep(8000);
-//
-//    WebElement botonPrivacidadInicio = driver.findElement(By.id("cookiebar-ok"));
-//    botonPrivacidadInicio.click();
-//
-//    driver.quit();
 
 
     driver = new FirefoxDriver(options);
@@ -48,10 +37,12 @@ public class Main {
     botonPrivacidadInicio.click();
 
 
-// Encuentra el elemento <div> con la clase "browse-module"
+    List<String> links = new ArrayList<>();
+
+    // Encuentra el elemento <div> con la clase "browse-module"
     WebElement divElement = driver.findElement(By.xpath("/html/body/div[1]/main/section/div[2]/div"));
 
-// Dentro del elemento <div>, busca el elemento <ul>
+    // Dentro del elemento <div>, busca el elemento <ul>
     List<WebElement> tittle = divElement.findElements(By.className("game-tile"));
 
     for (WebElement titulosJuego : tittle) {
@@ -67,18 +58,26 @@ public class Main {
       Thread.sleep(2000);
 
 
-        //  Nombre del Autor y del Mod
-        List<WebElement> byautors = driver.findElements(By.className("details"));
+      //  Nombre del JuegoMods
+      List<WebElement> juegoNombreMod = driver.findElements(By.xpath("/html/body/div[1]/main/div[2]/div"));
 
-        for (WebElement autorElements : byautors) {
-          System.out.println(autorElements.findElement(By.tagName("h3")).getText());
-          System.out.println(autorElements.findElement(By.className("by-author-link")).getText().replaceAll("\\n", " ").replaceAll("\\r", "") + autorElements.findElement(By.className("ellipsis")).getText() + "\n");
-        }
+      for (WebElement JuegoElementsMods : juegoNombreMod) {
+        System.out.println(JuegoElementsMods.findElement(By.tagName("h1")).getText() + "\n");
+        System.out.println(JuegoElementsMods.findElement(By.tagName("p")).getText() + "\n");
+
+      }
+
+
+      //  Nombre del Autor y del Mod
+      List<WebElement> byautors = driver.findElements(By.className("details"));
+
+      for (WebElement autorElements : byautors) {
+        System.out.println("\n" + autorElements.findElement(By.tagName("h3")).getText());
+        System.out.println(autorElements.findElement(By.className("by-author-link")).getText().replaceAll("\\n", " ").replaceAll("\\r", "") + autorElements.findElement(By.className("ellipsis")).getText() + "\n");
+      }
 
 
     }
-
-
 
 
     driver.quit();
