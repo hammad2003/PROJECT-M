@@ -65,18 +65,61 @@ public class Main {
         System.out.println(JuegoElementsMods.findElement(By.tagName("h1")).getText() + "\n");
         System.out.println(JuegoElementsMods.findElement(By.tagName("p")).getText() + "\n");
 
+
+        // Haz clic en el botón "opener"
+        WebElement openerButton = driver.findElement(By.className("opener")); // Reemplaza "opener" con el id real de tu botón
+        openerButton.click();
+
+
+
+
+
+//        List<String> juegosMods = new ArrayList<>();
+//
+//        // Encuentra todos los elementos <a> dentro del elemento con la clase "shelf"
+//        List<WebElement> tittle2 = driver.findElements(By.cssSelector(".shelf a"));
+//
+//        // Itera sobre los elementos <a> y obtén el valor del atributo "href"
+//        for (WebElement a : tittle2) {
+//          juegosMods.add(a.getAttribute("href"));
+//        }
+//
+//        // Itera sobre los enlaces de juegos y visita cada uno
+//        for (String modsLink : juegosMods) {
+//          driver.get(modsLink);
+//          Thread.sleep(2000);
+//
+//
+//              //  Nombre del Autor y del Mod
+//              List<WebElement> byautors = driver.findElements(By.className("project-header"));
+//
+//              for (WebElement autorElements : byautors) {
+//                System.out.println("\n" + autorElements.findElement(By.tagName("h1")).getText());
+//                System.out.println(autorElements.findElement(By.className("by-author-link")).getText().replaceAll("\\n", " ").replaceAll("\\r", "") + autorElements.findElement(By.className("ellipsis")).getText() + "\n");
+//              }
+//
+//              //  Categoria del Mod
+//              List<WebElement> catergori = driver.findElements(By.className("project-categories"));
+//
+//              for (WebElement categoriElements : catergori) {
+//                System.out.println("\n" + categoriElements.findElement(By.tagName("h3")).getText());
+//
+//                List<WebElement> liElements = driver.findElements(By.cssSelector("h1:contains('Mods') + ul li"));
+//
+//                for (WebElement liElement : liElements) {
+//                  WebElement aElement = liElement.findElement(By.tagName("a"));
+//                  String hrefValue = aElement.getAttribute("href");
+//                  String textValue = aElement.getText();
+//                  System.out.println("<li><a href=\"" + hrefValue + "\">" + textValue + "</a></li>");
+//                }
+//
+//              }
+//
+//        }
+
+
+
       }
-
-
-      //  Nombre del Autor y del Mod
-      List<WebElement> byautors = driver.findElements(By.className("details"));
-
-      for (WebElement autorElements : byautors) {
-        System.out.println("\n" + autorElements.findElement(By.tagName("h3")).getText());
-        System.out.println(autorElements.findElement(By.className("by-author-link")).getText().replaceAll("\\n", " ").replaceAll("\\r", "") + autorElements.findElement(By.className("ellipsis")).getText() + "\n");
-      }
-
-
     }
 
 
