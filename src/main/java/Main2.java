@@ -68,30 +68,30 @@ public class Main2 {
                 System.out.println(JuegoElementsMods.findElement(By.tagName("p")).getText() + "\n");
 
                 // Haz clic en el botón "opener"
-                WebElement openerButton = driver.findElement(By.className("opener")); // Reemplaza "opener" con el id real de tu botón
+                WebElement openerButton = driver.findElement(By.className("view-all-link")); // Reemplaza "opener" con el id real de tu botón
                 openerButton.click();
 
-                List<String> juegosModsLinks = new ArrayList<>();
-                List<WebElement> cardElements = driver.findElements(By.className("card"));
-
-                for (WebElement cardElement : cardElements) {
-                  WebElement h1Element = cardElement.findElement(By.tagName("h1"));
-
-                  // Verificar si el texto del "h3" es igual a "Mods"
-                  if ("Mods".equals(h1Element.getText())) {
-                    WebElement aElement = cardElement.findElement(By.tagName("a"));
-                    juegosModsLinks.add(aElement.getAttribute("href"));
-                  }
-                }
+//                List<String> juegosModsLinks = new ArrayList<>();
+//                List<WebElement> cardElements = driver.findElements(By.className("card"));
+//
+//                for (WebElement cardElement : cardElements) {
+//                  WebElement h1Element = cardElement.findElement(By.tagName("h1"));
+//
+//                  // Verificar si el texto del "h3" es igual a "Mods"
+//                  if ("Mods".equals(h1Element.getText())) {
+//                    WebElement aElement = cardElement.findElement(By.tagName("a"));
+//                    juegosModsLinks.add(aElement.getAttribute("href"));
+//                  }
+//                }
 
                 // Imprimir los enlaces en la consola
-                for (String ModsLink : juegosModsLinks) {
-                  driver.get(ModsLink);
-                  Thread.sleep(2000);
+//                for (String ModsLink : juegosModsLinks) {
+//                  driver.get(ModsLink);
+//                  Thread.sleep(2000);
 
 
-                    WebElement resultsContainer = driver.findElement(By.className("results-container"));
-                    List<WebElement> projectCards = resultsContainer.findElements(By.className(" project-card"));
+//                    WebElement resultsContainer = driver.findElement(By.className("results-container"));
+                    List<WebElement> projectCards = driver.findElements(By.className("project-card"));
 
                     for (WebElement projectCard : projectCards) {
                         // Obtener el nombre del proyecto
@@ -102,6 +102,7 @@ public class Main2 {
 
                         // Descripcion
                         System.out.println(projectCard.findElement(By.className("description")).getText());
+
 
                         WebElement detailsList = projectCard.findElement(By.className("details-list"));
                         List<WebElement> detailItems = detailsList.findElements(By.tagName("li"));
@@ -116,7 +117,7 @@ public class Main2 {
                         for (WebElement categoryItem : categoryItems) {
                             System.out.println(categoryItem.getText());
                         }
-                    }
+//                    }
 
                 }
 
