@@ -41,4 +41,13 @@ public class Juego {
     public void setProjectCards(List<Mod> mods) {
         this.mods = mods;
     }
+
+    @Override
+    public String toString() {
+        return "Juego{" +
+                "title='" + title + '\'' +
+                ", description='" + description + '\'' +
+                ", mods=" + mods +
+                '}';
+    }
 }

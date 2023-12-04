@@ -63,4 +63,15 @@ public class Mod {
     public void setCategories(List<Categoria> categories) {
         this.categories = categories;
     }
+
+    @Override
+    public String toString() {
+        return "Mod{" +
+                "projectName='" + projectName + '\'' +
+                ", author='" + author + '\'' +
+                ", projectDescription='" + projectDescription + '\'' +
+                ", details=" + details +
+                ", categories=" + categories +
+                '}';
+    }
 }

@@ -186,5 +186,7 @@ public class PMCurseForge {
 
         Controlador controlador = new Controlador(juegos);
         controlador.guardarXML();
+
+        controlador.guardarCSV();
     }
 }
