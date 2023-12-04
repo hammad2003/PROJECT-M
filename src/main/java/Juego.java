@@ -28,6 +28,11 @@ public class Juego {
         this.description = description;
     }
 
+    public Juego(String title, String description) {
+        this.title = title;
+        this.description = description;
+    }
+
     @XmlElement(name = "mods")
     public List<Mod> getProjectCards() {
         return mods;

@@ -48,6 +48,13 @@ public class Mod {
         this.details = details;
     }
 
+    public Mod(String projectName, String author, String projectDescription, List<String> details) {
+        this.projectName = projectName;
+        this.author = author;
+        this.projectDescription = projectDescription;
+        this.details = details;
+    }
+
     @XmlElement(name = "categories")
     public List<Categoria> getCategories() {
         return categories;

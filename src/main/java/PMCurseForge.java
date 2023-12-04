@@ -21,6 +21,8 @@ public class PMCurseForge {
      * @throws InterruptedException Si ocurre un error al pausar la ejecución.
      */
     public static void main(String[] args) throws InterruptedException {
+        List<Juego> juegos = new ArrayList<>();
+
         // Imprime la configuración del entorno
         System.out.println(System.getenv("PATH"));
         System.out.println(System.getenv("HOME"));
@@ -65,8 +67,11 @@ public class PMCurseForge {
         List<WebElement> tittle = divElement.findElements(By.className("game-tile"));
 
         // Imprime los títulos de los juegos
+        List<String> NombreJuegos = new ArrayList<>();
         for (WebElement titulosJuego : tittle) {
-            System.out.println(titulosJuego.findElement(By.tagName("h3")).getText());
+            String NombreJuego = titulosJuego.findElement(By.tagName("h3")).getText();
+            System.out.println(NombreJuego);
+            NombreJuegos.add(NombreJuego);
         }
 
         // Agrega enlaces de juegos a la lista
@@ -85,8 +90,13 @@ public class PMCurseForge {
                 // Imprime información sobre el juego
                 for (WebElement JuegoElementsMods : juegoNombreMod) {
                     try {
-                        System.out.println(JuegoElementsMods.findElement(By.tagName("h1")).getText() + "\n");
-                        System.out.println(JuegoElementsMods.findElement(By.tagName("p")).getText() + "\n");
+                        String NombreJuego = JuegoElementsMods.findElement(By.tagName("h1")).getText();
+                        System.out.println(NombreJuego + "\n");
+
+                        String JuegoDescription = JuegoElementsMods.findElement(By.tagName("p")).getText() ;
+                        System.out.println(JuegoDescription + "\n");
+
+                        Juego juego = new Juego(NombreJuego,JuegoDescription);
 
                         // Hacer clic en "View all" para ver todos los mods del juego
                         WebElement openerButtonMods = driver.findElement(By.className("view-all-link"));
@@ -101,47 +111,67 @@ public class PMCurseForge {
                         // Encuentra todos los elementos con la clase "project-card"
                         List<WebElement> projectCards = linksContainer.findElements(By.className("project-card"));
 
+                        List<Mod> mods = new ArrayList<>();
+
                         // Itera sobre los elementos "project-card"
                         for (WebElement projectCard : projectCards) {
                             // Mensaje informativo
                             System.out.println("Description" + "\n");
 
                             // Obtener el nombre del proyecto
-                            System.out.println(projectCard.findElement(By.className("name")).findElement(By.tagName("span")).getText());
+                            String NombreMod = projectCard.findElement(By.className("name")).findElement(By.tagName("span")).getText();
+                            System.out.println(NombreMod);
 
                             // Obtener el nombre del autor
-                            System.out.println("By " + projectCard.findElement(By.className("ellipsis")).getText());
+                            String NombreModCreador = "By " + projectCard.findElement(By.className("ellipsis")).getText();
+                            System.out.println(NombreModCreador);
 
                             // Descripcion
-                            System.out.println(projectCard.findElement(By.className("description")).getText());
+                            String DescripcionMod = projectCard.findElement(By.className("description")).getText();
+                            System.out.println(DescripcionMod);
 
                             // Descripcion
                             System.out.println("\n" + "\n" + "Details" + "\n");
 
                             // Detalles del proyecto
+                            List<String> DestallesMod = new ArrayList<>();
                             WebElement detailsList = projectCard.findElement(By.className("details-list"));
                             List<WebElement> detailItems = detailsList.findElements(By.tagName("li"));
 
                             // Imprime detalles del proyecto
                             for (WebElement detailItem : detailItems) {
-                                System.out.println(detailItem.getText());
+                                String Detalles = detailItem.getText();
+                                System.out.println(Detalles);
+                                DestallesMod.add(Detalles);
                             }
+
+                            Mod mod = new Mod(NombreMod,NombreModCreador,DescripcionMod,DestallesMod);
 
                             // Mensaje informativo
                             System.out.println("\n" + "\n" + "Categories" + "\n");
 
                             // Categorías del proyecto
+                            List<Categoria> CategoriaMod = new ArrayList<>();
                             WebElement categoriesList = projectCard.findElement(By.className("categories"));
                             List<WebElement> categoryItems = categoriesList.findElements(By.tagName("li"));
 
                             // Imprime categorías del proyecto
                             for (WebElement categoryItem : categoryItems) {
-                                System.out.println(categoryItem.getText());
+                                String Categoria = categoryItem.getText();
+                                Categoria categoria = new Categoria(Categoria);
+                                System.out.println(Categoria);
+                                CategoriaMod.add(categoria);
                             }
+
+                            mod.setCategories(CategoriaMod);
+                            mods.add(mod);
 
                             // Espaciado para mejorar la legibilidad
                             System.out.println("\n");
                         }
+
+                        juego.setProjectCards(mods);
+                        juegos.add(juego);
 
                     } catch (Exception e) {
                         // Captura la excepción e imprime un mensaje indicando que no se encontró información
@@ -151,7 +181,6 @@ public class PMCurseForge {
                     }
                 }
             }
-
         // Cerrar el navegador al finalizar
         driver.quit();
     }

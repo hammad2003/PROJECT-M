@@ -1,4 +1,3 @@
-/*
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Marshaller;
@@ -97,4 +96,3 @@ public class Controlador {
 
     // Resto del código necesario, como los métodos createDocument y saveXMLToFile, permanecen sin cambios.
 }
-*/
