@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.ArrayList;
@@ -93,6 +94,12 @@ public class PMV2 {
 
                 // Mensaje informativo
                 System.out.println("Mods" + "\n");
+
+//                Thread.sleep(10000);
+//
+//                WebElement botonAceptar = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("/html/body/div/div[2]/div[5]/button[2]")));
+//                WebElement privacidad = botonAceptar.findElement(By.xpath("/html/body/div/div[2]/div[5]/button[2]"));
+//                privacidad.click();
 
                 // Encuentra el elemento con la clase "results-container"
                 WebElement linksContainer = driver.findElement(By.className("results-container"));
