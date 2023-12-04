@@ -3,12 +3,12 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @XmlRootElement
-public class ProjectCard {
+public class Mod {
     private String projectName;
     private String author;
     private String projectDescription;
     private List<String> details;
-    private List<String> categories;
+    private List<Categoria> categories; // Cambiado a List<Categoria>
 
     // Getter and setter methods
 
@@ -49,11 +49,11 @@ public class ProjectCard {
     }
 
     @XmlElement(name = "categories")
-    public List<String> getCategories() {
+    public List<Categoria> getCategories() {
         return categories;
     }
 
-    public void setCategories(List<String> categories) {
+    public void setCategories(List<Categoria> categories) {
         this.categories = categories;
     }
 }

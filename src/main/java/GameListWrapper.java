@@ -4,14 +4,14 @@ import java.util.List;
 
 @XmlRootElement
 public class GameListWrapper {
-    private List<Game> gamesList;
+    private List<Juego> gamesList;
 
     @XmlElement(name = "game")
-    public List<Game> getGamesList() {
+    public List<Juego> getGamesList() {
         return gamesList;
     }
 
-    public void setGamesList(List<Game> gamesList) {
+    public void setGamesList(List<Juego> gamesList) {
         this.gamesList = gamesList;
     }
 }

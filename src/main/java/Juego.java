@@ -3,10 +3,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 @XmlRootElement
-public class Game {
+public class Juego {
     private String title;
     private String description;
-    private List<ProjectCard> projectCards;
+    private List<Mod> mods;
 
     // Getter and setter methods
 
@@ -28,12 +28,12 @@ public class Game {
         this.description = description;
     }
 
-    @XmlElement(name = "projectCards")
-    public List<ProjectCard> getProjectCards() {
-        return projectCards;
+    @XmlElement(name = "mods")
+    public List<Mod> getProjectCards() {
+        return mods;
     }
 
-    public void setProjectCards(List<ProjectCard> projectCards) {
-        this.projectCards = projectCards;
+    public void setProjectCards(List<Mod> mods) {
+        this.mods = mods;
     }
 }

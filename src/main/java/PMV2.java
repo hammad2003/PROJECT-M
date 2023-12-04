@@ -7,6 +7,11 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.xml.bind.JAXBContext;
+import javax.xml.bind.JAXBException;
+import javax.xml.bind.Marshaller;
+import java.io.File;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,6 +51,8 @@ public class PMV2 {
         WebElement botonPrivacidadInicio = driver.findElement(By.id("cookiebar-ok"));
         botonPrivacidadInicio.click();
 
+        List<Juego> gamesList = new ArrayList<>();
+
         // Mensaje informativo
         System.out.println("CurseForge" + "\n");
 
@@ -75,25 +82,27 @@ public class PMV2 {
             links.add(a.getAttribute("href"));
         }
 
-        // Itera sobre los enlaces de los juegos
-        for (String juegosLink : links) {
-            driver.get(juegosLink);
-            Thread.sleep(5000);
+        for (int iteration = 0; iteration < 5; iteration++) {
 
-            //  Nombre del JuegoMods
-            List<WebElement> juegoNombreMod = driver.findElements(By.className("game-description"));
+            // Itera sobre los enlaces de los juegos
+            for (String juegosLink : links) {
+                driver.get(juegosLink);
+                Thread.sleep(5000);
 
-            // Imprime información sobre el juego
-            for (WebElement JuegoElementsMods : juegoNombreMod) {
-                System.out.println(JuegoElementsMods.findElement(By.tagName("h1")).getText() + "\n");
-                System.out.println(JuegoElementsMods.findElement(By.tagName("p")).getText() + "\n");
+                //  Nombre del JuegoMods
+                List<WebElement> juegoNombreMod = driver.findElements(By.className("game-description"));
 
-                // Hacer clic en "View all" para ver todos los mods del juego
-                WebElement openerButtonMods = driver.findElement(By.className("view-all-link"));
-                openerButtonMods.click();
+                // Imprime información sobre el juego
+                for (WebElement JuegoElementsMods : juegoNombreMod) {
+                    System.out.println(JuegoElementsMods.findElement(By.tagName("h1")).getText() + "\n");
+                    System.out.println(JuegoElementsMods.findElement(By.tagName("p")).getText() + "\n");
 
-                // Mensaje informativo
-                System.out.println("Mods" + "\n");
+                    // Hacer clic en "View all" para ver todos los mods del juego
+                    WebElement openerButtonMods = driver.findElement(By.className("view-all-link"));
+                    openerButtonMods.click();
+
+                    // Mensaje informativo
+                    System.out.println("Mods" + "\n");
 
 //                Thread.sleep(10000);
 //
@@ -101,57 +110,87 @@ public class PMV2 {
 //                WebElement privacidad = botonAceptar.findElement(By.xpath("/html/body/div/div[2]/div[5]/button[2]"));
 //                privacidad.click();
 
-                // Encuentra el elemento con la clase "results-container"
-                WebElement linksContainer = driver.findElement(By.className("results-container"));
+                    // Encuentra el elemento con la clase "results-container"
+                    WebElement linksContainer = driver.findElement(By.className("results-container"));
 
-                // Encuentra todos los elementos con la clase "project-card"
-                List<WebElement> projectCards = linksContainer.findElements(By.className("project-card"));
+                    // Encuentra todos los elementos con la clase "project-card"
+                    List<WebElement> projectCards = linksContainer.findElements(By.className("project-card"));
 
-                // Itera sobre los elementos "project-card"
-                for (WebElement projectCard : projectCards) {
-                    // Mensaje informativo
-                    System.out.println("Description" + "\n");
+                    // Itera sobre los elementos "project-card"
+                    for (WebElement projectCard : projectCards) {
+                        // Mensaje informativo
+                        System.out.println("Description" + "\n");
 
-                    // Obtener el nombre del proyecto
-                    System.out.println(projectCard.findElement(By.className("name")).findElement(By.tagName("span")).getText());
+                        // Obtener el nombre del proyecto
+                        System.out.println(projectCard.findElement(By.className("name")).findElement(By.tagName("span")).getText());
 
-                    // Obtener el nombre del autor
-                    System.out.println(projectCard.findElement(By.className("by-author-link")).getText().replaceAll("\\n", " ").replaceAll("\\r", "") + projectCard.findElement(By.className("ellipsis")).getText());
+                        // Obtener el nombre del autor
+                        System.out.println("By " + projectCard.findElement(By.className("ellipsis")).getText());
 
-                    // Descripcion
-                    System.out.println(projectCard.findElement(By.className("description")).getText());
+                        // Descripcion
+                        System.out.println(projectCard.findElement(By.className("description")).getText());
 
-                    // Descripcion
-                    System.out.println("\n" + "\n" + "Details" + "\n");
+                        // Descripcion
+                        System.out.println("\n" + "\n" + "Details" + "\n");
 
-                    // Detalles del proyecto
-                    WebElement detailsList = projectCard.findElement(By.className("details-list"));
-                    List<WebElement> detailItems = detailsList.findElements(By.tagName("li"));
+                        // Detalles del proyecto
+                        WebElement detailsList = projectCard.findElement(By.className("details-list"));
+                        List<WebElement> detailItems = detailsList.findElements(By.tagName("li"));
 
-                    // Imprime detalles del proyecto
-                    for (WebElement detailItem : detailItems) {
-                        System.out.println(detailItem.getText());
+                        // Imprime detalles del proyecto
+                        for (WebElement detailItem : detailItems) {
+                            System.out.println(detailItem.getText());
+                        }
+
+                        // Mensaje informativo
+                        System.out.println("\n" + "\n" + "Categories" + "\n");
+
+                        // Categorías del proyecto
+                        WebElement categoriesList = projectCard.findElement(By.className("categories"));
+                        List<WebElement> categoryItems = categoriesList.findElements(By.tagName("li"));
+
+                        // Imprime categorías del proyecto
+                        for (WebElement categoryItem : categoryItems) {
+                            System.out.println(categoryItem.getText());
+                        }
+
+                        // Espaciado para mejorar la legibilidad
+                        System.out.println("\n");
                     }
-
-                    // Mensaje informativo
-                    System.out.println("\n" + "\n" + "Categories" + "\n");
-
-                    // Categorías del proyecto
-                    WebElement categoriesList = projectCard.findElement(By.className("categories"));
-                    List<WebElement> categoryItems = categoriesList.findElements(By.tagName("li"));
-
-                    // Imprime categorías del proyecto
-                    for (WebElement categoryItem : categoryItems) {
-                        System.out.println(categoryItem.getText());
-                    }
-
-                    // Espaciado para mejorar la legibilidad
-                    System.out.println("\n");
                 }
             }
         }
 
+        generarXML(gamesList);
+
         // Cerrar el navegador al finalizar
         driver.quit();
     }
+
+    private static void generarXML(List<Juego> gamesList) {
+        try {
+            // Crea el contexto JAXB para la clase GameListWrapper
+            JAXBContext context = JAXBContext.newInstance(GameListWrapper.class);
+
+            // Crea un objeto Marshaller
+            Marshaller marshaller = context.createMarshaller();
+
+            // Configura el marshaller para que el XML esté bien formado
+            marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+
+            // Crea un objeto GameListWrapper y asigna la lista de juegos
+            GameListWrapper gameListWrapper = new GameListWrapper();
+            gameListWrapper.setGamesList(gamesList);
+
+            // Serializa y guarda el objeto GameListWrapper en un archivo XML
+            marshaller.marshal(gameListWrapper, new File("CurseForge.xml"));
+
+            // Muestra un mensaje indicando que la operación fue exitosa
+            System.out.println("Datos guardados en 'output.xml' correctamente.");
+
+        } catch (JAXBException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
