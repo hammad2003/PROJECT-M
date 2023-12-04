@@ -1,98 +1,111 @@
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.JAXBException;
-import javax.xml.bind.Marshaller;
+import org.w3c.dom.Document;
+import org.w3c.dom.Node;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-
-import java.io.File;
-import java.io.StringWriter;
-
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerException;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-
-
-
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.ArrayList;
+import java.io.*;
 import java.util.List;
 
 public class Controlador {
+    List<Juego> juegos;
 
-    public static void main(String[] args) {
-        // Lógica para realizar el web scraping y obtener los datos
-        PMCurseForge pmCurseForge = webScrapingLogic();
-
-        // Generar XML
-        generarXML(pmCurseForge);
-
-        // Generar CSV
-        generarCSV(pmCurseForge);
+    public Controlador(List<Juego> juegos) {
+        this.juegos = juegos;
     }
 
-    private static PMCurseForge webScrapingLogic() {
-        // Aquí debes realizar la lógica de web scraping y devolver una instancia de PMCurseForge
-        // poblada con los datos recopilados utilizando las clases Juego, Mod y Categoria.
-        return new PMCurseForge(); // Reemplaza esto con la lógica real.
-    }
+    public void guardarXML(){
 
-    private static void generarXML(PMCurseForge pmCurseForge) {
+        // En la siguiente variable es necesario poner la ruta en la que deseas guardar el fichero.
+        String xmlFilePath="src/main/CurseForge.xml";
+
         try {
-            // Configura el contexto JAXB
-            JAXBContext context = JAXBContext.newInstance(PMCurseForge.class);
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+            Document document = dBuilder.newDocument();
 
-            // Crea el marshaller
-            Marshaller marshaller = context.createMarshaller();
 
-            // Convierte el objeto PMCurseForge a un documento DOM
-            Document document = createDocument();
+            //La siguiente línea es para declarar cuál es el nodo raíz del documento XML
 
-            // Marshal el objeto a un documento DOM
-            marshaller.marshal(pmCurseForge, document);
+            Node rootNode = document.createElement("Juegos");
+            document.appendChild(rootNode);
 
-            // Guarda el documento XML en un archivo
-            saveXMLToFile(document, "output.xml");
+            //El siguiente for es para que cree un nodo por cada game, lo mismo para cualquier bucle que se vea de este tipo
 
-        } catch (JAXBException e) {
-            e.printStackTrace();
-        }
-    }
+            for(Juego juego: juegos){
+                Node juegoNode = document.createElement("Juego");
+                rootNode.appendChild(juegoNode);
 
-    private static void generarCSV(PMCurseForge pmCurseForge) {
-        try (FileWriter writer = new FileWriter("output.csv")) {
-            // Escribe las cabeceras del CSV
-            writer.append("Game Title,Game Description,Mod Project Name,Mod Author,Mod Description,Mod Details,Mod Categories\n");
+                Node juegoNombre = document.createElement("Nombre");
+                juegoNombre.appendChild(document.createTextNode(juego.getTitle()));
+                juegoNode.appendChild(juegoNombre);
 
-            // Recorre los juegos y mods para escribir en el CSV
-            for (Juego juego : pmCurseForge.getJuegos()) {
-                for (Mod mod : juego.getMods()) {
-                    // Escribe la información en el CSV
-                    writer.append(String.format("%s,%s,%s,%s,%s,%s,%s\n",
-                            juego.getTitle(),
-                            juego.getDescription(),
-                            mod.getProjectName(),
-                            mod.getAuthor(),
-                            mod.getProjectDescription(),
-                            String.join("; ", mod.getDetails()),
-                            String.join("; ", mod.getCategories())));
+                Node juegoDescripcion = document.createElement("Descripcion");
+                juegoDescripcion.appendChild(document.createTextNode(juego.getTitle()));
+                juegoNode.appendChild(juegoDescripcion);
+
+
+                Node nodeMods = document.createElement("Mods");
+
+                for(Mod mod : juego.getProjectCards()){
+                    Node modNode = document.createElement("Mod");
+                    nodeMods.appendChild(modNode);
+
+                    Node modName = document.createElement("Nombre");
+                    modName.appendChild(document.createTextNode(mod.getProjectName()));
+                    modNode.appendChild(modName);
+
+                    Node modAuthor = document.createElement("Autor");
+                    modAuthor.appendChild(document.createTextNode(mod.getAuthor()));
+                    modNode.appendChild(modAuthor);
+
+                    Node modDescription = document.createElement("Descripcion");
+                    modDescription.appendChild(document.createTextNode(mod.getProjectDescription()));
+                    modNode.appendChild(modDescription);
+
+
+                    Node nodeDestalles = document.createElement("Detalles");
+
+                    for(String string : mod.getDetails()){
+                        Node detailNode = document.createElement("Detalle");
+                        nodeDestalles.appendChild(modNode);
+
+                        Node details = document.createElement("Descripcion");
+                        details.appendChild(document.createTextNode(string));
+                        detailNode.appendChild(details);
+                    }
+
+
+                    Node nodeCategories = document.createElement("Categorias");
+
+                    for(Categoria categoria : mod.getCategories()){
+                        Node categoriaNode = document.createElement("Categoria");
+                        nodeCategories.appendChild(modNode);
+
+                        Node nombre = document.createElement("Nombre");
+                        nombre.appendChild(document.createTextNode(categoria.getNombre()));
+                        categoriaNode.appendChild(nombre);
+                    }
                 }
             }
 
-            System.out.println("CSV generado exitosamente.");
+            TransformerFactory transformerFactory = TransformerFactory.newInstance();
+            Transformer transformer = transformerFactory.newTransformer();
+            transformer.setOutputProperty(OutputKeys.INDENT, "yes"); // El yes es para que tabule de forma automática
 
-        } catch (IOException e) {
-            e.printStackTrace();
+            DOMSource source = new DOMSource(document);
+            StreamResult result = new StreamResult(new File(xmlFilePath));
+            transformer.transform(source, result);
+
+            System.out.println("Datos guardados correctamente en el archivo XML");
+
+        } catch (ParserConfigurationException | TransformerException e) {
+            throw new RuntimeException(e);
         }
     }
-
-    // Resto del código necesario, como los métodos createDocument y saveXMLToFile, permanecen sin cambios.
 }

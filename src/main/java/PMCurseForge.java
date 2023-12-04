@@ -183,5 +183,8 @@ public class PMCurseForge {
             }
         // Cerrar el navegador al finalizar
         driver.quit();
+
+        Controlador controlador = new Controlador(juegos);
+        controlador.guardarXML();
     }
 }
