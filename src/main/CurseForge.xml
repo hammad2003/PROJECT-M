@@ -21,7 +21,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>A mod that attempts to bring items and blocks from Mc 1.12.2+</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>51</Descripcion>
+                        <Descripcion>55</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -66,7 +66,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>Makes tweaks for the SRO Modpack</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>12</Descripcion>
+                        <Descripcion>17</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -99,7 +99,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>Roads and Signs for your World</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>205</Descripcion>
+                        <Descripcion>211</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -138,7 +138,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>Say goodbye to complex cable networks - all you need are network cards to seamlessly link storage blocks for a unified storage system</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>261</Descripcion>
+                        <Descripcion>268</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -183,7 +183,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>Aesthetically simple guns - an addon for MrCrayfish's Gun Mod.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>481.7K</Descripcion>
+                        <Descripcion>481.9K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -219,7 +219,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>Customisable sidebars for your Minecraft server!</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>228</Descripcion>
+                        <Descripcion>230</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -444,7 +444,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>creatures that try to disguise themselves as one of you.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>45</Descripcion>
+                        <Descripcion>47</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -522,7 +522,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>Discover artifacts &amp; fossils by encountering new structures that'll enhance your adventure and exploration!</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>859.7K</Descripcion>
+                        <Descripcion>860.8K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -606,7 +606,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>This mod sometimes spawns small monsters such as silverfish, endermites or baby husks when destroying pots!</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>138</Descripcion>
+                        <Descripcion>139</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -690,7 +690,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                 <Descripcion>A Minecraft mod that hides or changes the crosshair dependent on context</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>418.7K</Descripcion>
+                        <Descripcion>418.8K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1564,6 +1564,42 @@ So how do you find the best The Sims 4 mod that’s most suitable for you and yo
 With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 mod hub, there’s really something for everyone. Have fun!</Descripcion>
         <Mods>
             <Mod>
+                <Nombre>Sims 4 Multiplayer Mod | S4MP</Nombre>
+                <Autor>By Sims 4 Multiplayer Mod | S4MP</Autor>
+                <Descripcion>Play The Sims 4 real-time over the network and “live together” with other players in the same household. See what the others are doing, interact with them, and have fun together!</Descripcion>
+                <Detalles>
+                    <Detalle>
+                        <Descripcion>564.2K</Descripcion>
+                    </Detalle>
+                    <Detalle>
+                        <Descripcion>Dec 5, 2023</Descripcion>
+                    </Detalle>
+                    <Detalle>
+                        <Descripcion>Aug 26, 2022</Descripcion>
+                    </Detalle>
+                    <Detalle>
+                        <Descripcion>86.76 MB</Descripcion>
+                    </Detalle>
+                    <Detalle>
+                        <Descripcion>1.102.190</Descripcion>
+                    </Detalle>
+                </Detalles>
+                <Categorias>
+                    <Categoria>
+                        <Nombre>Mods</Nombre>
+                    </Categoria>
+                    <Categoria>
+                        <Nombre>Utilities</Nombre>
+                    </Categoria>
+                    <Categoria>
+                        <Nombre>Gameplay</Nombre>
+                    </Categoria>
+                    <Categoria>
+                        <Nombre>Miscellaneous</Nombre>
+                    </Categoria>
+                </Categorias>
+            </Mod>
+            <Mod>
                 <Nombre>MC Command Center</Nombre>
                 <Autor>By MC Command Center</Autor>
                 <Descripcion>Allow many different gameplay elements to be changed in Sims 4</Descripcion>
@@ -1611,7 +1647,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>Replacements game loading screem</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>33</Descripcion>
+                        <Descripcion>38</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1644,7 +1680,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>Replacements game loading screem</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>27</Descripcion>
+                        <Descripcion>31</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1677,7 +1713,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>storytelling poses for the movies</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>20</Descripcion>
+                        <Descripcion>25</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1707,7 +1743,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>custom food</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>189</Descripcion>
+                        <Descripcion>228</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1743,7 +1779,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>custom food</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>159</Descripcion>
+                        <Descripcion>189</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1779,7 +1815,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>custom food</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>151</Descripcion>
+                        <Descripcion>177</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1815,7 +1851,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>Spanish translation by laura</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>184</Descripcion>
+                        <Descripcion>197</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1848,7 +1884,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>Spanish translation by laura</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>99</Descripcion>
+                        <Descripcion>104</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1881,7 +1917,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>Spanish translation by laura</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>185</Descripcion>
+                        <Descripcion>196</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1914,7 +1950,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>Spanish translation by laura</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>169</Descripcion>
+                        <Descripcion>178</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1947,7 +1983,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>Spanish translation by laura</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>164</Descripcion>
+                        <Descripcion>173</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -2041,48 +2077,12 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 </Categorias>
             </Mod>
             <Mod>
-                <Nombre>Sims 4 Multiplayer Mod | S4MP</Nombre>
-                <Autor>By Sims 4 Multiplayer Mod | S4MP</Autor>
-                <Descripcion>Play The Sims 4 real-time over the network and “live together” with other players in the same household. See what the others are doing, interact with them, and have fun together!</Descripcion>
-                <Detalles>
-                    <Detalle>
-                        <Descripcion>564.0K</Descripcion>
-                    </Detalle>
-                    <Detalle>
-                        <Descripcion>Dec 4, 2023</Descripcion>
-                    </Detalle>
-                    <Detalle>
-                        <Descripcion>Aug 26, 2022</Descripcion>
-                    </Detalle>
-                    <Detalle>
-                        <Descripcion>51.78 MB</Descripcion>
-                    </Detalle>
-                    <Detalle>
-                        <Descripcion>1.102.190</Descripcion>
-                    </Detalle>
-                </Detalles>
-                <Categorias>
-                    <Categoria>
-                        <Nombre>Mods</Nombre>
-                    </Categoria>
-                    <Categoria>
-                        <Nombre>Miscellaneous</Nombre>
-                    </Categoria>
-                    <Categoria>
-                        <Nombre>Gameplay</Nombre>
-                    </Categoria>
-                    <Categoria>
-                        <Nombre>Utilities</Nombre>
-                    </Categoria>
-                </Categorias>
-            </Mod>
-            <Mod>
                 <Nombre>No More Check Out ThrifTea Notification</Nombre>
                 <Autor>By No More Check Out ThrifTea Notification</Autor>
                 <Descripcion>Gets rid off the annoying ThrifTea Notification happening everyday</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>123</Descripcion>
+                        <Descripcion>138</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 3, 2023</Descripcion>
@@ -2115,7 +2115,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>Spanish Translation Vida Amorosa Abierta</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>117</Descripcion>
+                        <Descripcion>124</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 3, 2023</Descripcion>
@@ -2217,7 +2217,7 @@ With the best selection of Sims 4 mods here on CurseForge, the official Sims 4 m
                 <Descripcion>Unlock Clothing from the Thrift Store</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>37.7K</Descripcion>
+                        <Descripcion>37.8K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 2, 2023</Descripcion>
@@ -2977,7 +2977,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>Testmod for item skins.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>64</Descripcion>
+                        <Descripcion>69</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3007,7 +3007,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>Base Claim and Decay system for servers</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>3</Descripcion>
+                        <Descripcion>4</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3040,7 +3040,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>extractor + petrol,miel,seve</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>134</Descripcion>
+                        <Descripcion>146</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3070,7 +3070,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>Provo Client</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>3.3K</Descripcion>
+                        <Descripcion>3.4K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3136,7 +3136,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>Companion mod for WShop Plugin</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>35.5K</Descripcion>
+                        <Descripcion>37.1K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3166,7 +3166,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>CSZL-Vengeful demons</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>19</Descripcion>
+                        <Descripcion>32</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3196,7 +3196,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>Arcadia Additional Dinos</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>16.5K</Descripcion>
+                        <Descripcion>17.0K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3319,7 +3319,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>store and recieve dinos (test only)</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>75</Descripcion>
+                        <Descripcion>77</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3379,7 +3379,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>WRG ARK Community Mod</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>16</Descripcion>
+                        <Descripcion>20</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3448,7 +3448,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>craft mek and generator element class</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>344</Descripcion>
+                        <Descripcion>377</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3547,7 +3547,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>This is a direct port of Structures Plus (S+) from Ark Survival Evolved.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>8.0K</Descripcion>
+                        <Descripcion>8.1K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3583,7 +3583,7 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                 <Descripcion>Compilation of things for Ark Empire servers.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>505</Descripcion>
+                        <Descripcion>506</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -4647,7 +4647,7 @@ Trying Terraria mods out is quite easy. All you have to do is look around here i
                 <Descripcion>Defeat each boss in order, and collect boss trophies.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>23.8K</Descripcion>
+                        <Descripcion>23.9K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Nov 24, 2019</Descripcion>
@@ -5938,7 +5938,7 @@ So how do you try them out? Easy. All you have to do is look around here in Curs
                 <Descripcion>Protoss Factions Units</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>45.4K</Descripcion>
+                        <Descripcion>45.5K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 11, 2018</Descripcion>
@@ -9176,7 +9176,7 @@ Each and every Minecraft Bedrock mod has its own unique flavor, and offers a dif
                 <Descripcion>Do you want a backpack addon that works very similar to the Backpack mods from java? or do you want to carry alot of things but don't have anymore space in your inventory? This addon is just for you! If you have played any backpack mods from Java you migh</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>65.1K</Descripcion>
+                        <Descripcion>65.3K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Nov 29, 2023</Descripcion>
@@ -9206,7 +9206,7 @@ Each and every Minecraft Bedrock mod has its own unique flavor, and offers a dif
                 <Descripcion>An even more detailed experience with quadruple-resolution textures!</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>328.7K</Descripcion>
+                        <Descripcion>328.8K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 4, 2023</Descripcion>
@@ -9269,7 +9269,7 @@ Each and every Minecraft Bedrock mod has its own unique flavor, and offers a dif
                 <Descripcion>This addon aims to be a complete overhaul of Minecraft's progression system; adding 26 new weapons types, 12 materials, and tweaked recipes to make for a more engaging progression system</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>27.2K</Descripcion>
+                        <Descripcion>27.3K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Nov 11, 2023</Descripcion>
@@ -9362,7 +9362,7 @@ Each and every Minecraft Bedrock mod has its own unique flavor, and offers a dif
                 <Descripcion>Have you ever played an Add-On, or multiple Add-Ons on a world, and you don't know what block or entity you're looking at? Poggy's What's That? Will provide all the info you'd need!</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>18.5K</Descripcion>
+                        <Descripcion>18.6K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 27, 2023</Descripcion>
@@ -9743,7 +9743,7 @@ Each and every Minecraft Bedrock mod has its own unique flavor, and offers a dif
                 <Descripcion>A really really big addon that brings adds new monsters to slay, weapons to collect, and bosses to face!</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>39.4K</Descripcion>
+                        <Descripcion>39.5K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 18, 2022</Descripcion>
@@ -9818,7 +9818,7 @@ You can easily find the best Stardew Valley mods here, with each Stardew Valley 
                 <Descripcion>Load content packs that change the game's data, maps, and images without replacing XNB files.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>70.7K</Descripcion>
+                        <Descripcion>70.8K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 1, 2023</Descripcion>
@@ -9914,7 +9914,7 @@ You can easily find the best Stardew Valley mods here, with each Stardew Valley 
                 <Descripcion>The villagers are dead, but they don't know it.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>411</Descripcion>
+                        <Descripcion>413</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Nov 11, 2023</Descripcion>
@@ -9977,7 +9977,7 @@ You can easily find the best Stardew Valley mods here, with each Stardew Valley 
                 <Descripcion>Lets you transform into a bat that provides a birds eye view of the valley and a movement speed buff.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>531</Descripcion>
+                        <Descripcion>534</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 20, 2023</Descripcion>
@@ -10007,7 +10007,7 @@ You can easily find the best Stardew Valley mods here, with each Stardew Valley 
                 <Descripcion>Lets you set a custom daily production for any object using Content Patcher.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>245</Descripcion>
+                        <Descripcion>246</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 18, 2023</Descripcion>
@@ -10166,7 +10166,7 @@ You can easily find the best Stardew Valley mods here, with each Stardew Valley 
                 <Descripcion>Lets you place scarecrows and rarecrows in between crops, taking up no space and more efficiently protecting your farm.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>999</Descripcion>
+                        <Descripcion>1.0K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 10, 2023</Descripcion>
@@ -10286,7 +10286,7 @@ You can easily find the best Stardew Valley mods here, with each Stardew Valley 
                 <Descripcion>A framework for creating wide and hi-res wallpaper.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>460</Descripcion>
+                        <Descripcion>462</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 6, 2023</Descripcion>
@@ -10316,7 +10316,7 @@ You can easily find the best Stardew Valley mods here, with each Stardew Valley 
                 <Descripcion>Lets you add newlines to dialogue using the pilcrow character ¶.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>305</Descripcion>
+                        <Descripcion>307</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Sep 29, 2023</Descripcion>
@@ -10406,7 +10406,7 @@ You can easily find the best Stardew Valley mods here, with each Stardew Valley 
                 <Descripcion>Allows you to create custom ore nodes that look like and drop whatever object you want.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>461</Descripcion>
+                        <Descripcion>462</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Sep 12, 2023</Descripcion>
@@ -12886,7 +12886,7 @@ Have fun!</Descripcion>
                 <Descripcion>Automate the Pet Crafting feature</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>437</Descripcion>
+                        <Descripcion>439</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 18, 2023</Descripcion>
@@ -15223,7 +15223,7 @@ And of course, the important thing is to have fun with these Final Fantasy XV mo
                 <Descripcion>Allows the usage of NVIDIA Ansel during cutscenes, dialogues, loading screens, and menus—as well as in Comrades.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>237</Descripcion>
+                        <Descripcion>238</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 2, 2023</Descripcion>
@@ -15256,7 +15256,7 @@ And of course, the important thing is to have fun with these Final Fantasy XV mo
                 <Descripcion>A strange snowstorm is brewing down at Wiz Chocobo Post. Join the FFXV boys as they take a detour to celebrate Christmas with Iris, Wiz, and more!</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>784</Descripcion>
+                        <Descripcion>785</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 2, 2023</Descripcion>
@@ -15744,7 +15744,7 @@ Here in CurseForge, you can find some of the best mods for Spider-Man Remastered
                 <Descripcion>Gives the Cat a new look</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>706</Descripcion>
+                        <Descripcion>707</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 2, 2022</Descripcion>
@@ -20400,7 +20400,7 @@ And of course, the important thing is to have fun with these River City Girls 2 
                 <Descripcion>Removes Books from the Quick Items</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>457</Descripcion>
+                        <Descripcion>460</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Jun 9, 2023</Descripcion>
@@ -21628,7 +21628,7 @@ All mods are 100% free, so you can pretty much try all of them out until you fin
                 <Descripcion>Kidd as Absa from Rivals of Aether</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>116</Descripcion>
+                        <Descripcion>117</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Oct 23, 2023</Descripcion>
@@ -21748,7 +21748,7 @@ All mods are 100% free, so you can pretty much try all of them out until you fin
                 <Descripcion>Just black and white Kidd lul</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>69</Descripcion>
+                        <Descripcion>70</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Sep 7, 2023</Descripcion>
@@ -22111,7 +22111,7 @@ And of course, the important thing is to have fun with these Mario Party 3 mods 
                 <Descripcion>A board inspired by Super Mario Galaxy</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>139</Descripcion>
+                        <Descripcion>140</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Jun 29, 2023</Descripcion>
