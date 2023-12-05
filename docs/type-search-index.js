@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Game"},{"p":"<Unnamed>","l":"GameListWrapper"},{"p":"<Unnamed>","l":"PMV1"},{"p":"<Unnamed>","l":"PMV2"},{"p":"<Unnamed>","l":"ProjectCard"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"<Unnamed>","l":"Categoria"},{"p":"<Unnamed>","l":"Controlador"},{"p":"<Unnamed>","l":"Juego"},{"p":"<Unnamed>","l":"Mod"},{"p":"<Unnamed>","l":"PMCurseForge"}];updateSearchResults();

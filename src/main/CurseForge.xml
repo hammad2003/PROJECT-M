@@ -147,7 +147,7 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                         <Descripcion>Nov 27, 2023</Descripcion>
                     </Detalle>
                     <Detalle>
-                        <Descripcion>147.27 KB</Descripcion>
+                        <Descripcion>164.61 KB</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>1.20.2</Descripcion>
@@ -161,9 +161,6 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                         <Nombre>Mods</Nombre>
                     </Categoria>
                     <Categoria>
-                        <Nombre>Storage</Nombre>
-                    </Categoria>
-                    <Categoria>
                         <Nombre>Ores and Resources</Nombre>
                     </Categoria>
                     <Categoria>
@@ -174,6 +171,9 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                     </Categoria>
                     <Categoria>
                         <Nombre>Technology</Nombre>
+                    </Categoria>
+                    <Categoria>
+                        <Nombre>Storage</Nombre>
                     </Categoria>
                 </Categorias>
             </Mod>
@@ -590,13 +590,13 @@ And of course, the important thing is to have fun with these Minecraft mods - us
                         <Nombre>Mods</Nombre>
                     </Categoria>
                     <Categoria>
+                        <Nombre>Miscellaneous</Nombre>
+                    </Categoria>
+                    <Categoria>
                         <Nombre>MCreator</Nombre>
                     </Categoria>
                     <Categoria>
                         <Nombre>Cosmetic</Nombre>
-                    </Categoria>
-                    <Categoria>
-                        <Nombre>Miscellaneous</Nombre>
                     </Categoria>
                 </Categorias>
             </Mod>
@@ -812,7 +812,7 @@ The most important thing to keep in mind with these addons for World of Warcraft
                 <Descripcion>Single view bag or bank, sorting, browsing alt inventories, currency tracking and item location info tooltips.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>59.3K</Descripcion>
+                        <Descripcion>59.5K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -890,7 +890,7 @@ The most important thing to keep in mind with these addons for World of Warcraft
                 <Descripcion>An item comparison tool for all flavors of WoW Classic.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>26.9K</Descripcion>
+                        <Descripcion>27.2K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1013,7 +1013,7 @@ The most important thing to keep in mind with these addons for World of Warcraft
                 <Descripcion>FastSpamBlock is a Addon that aims to eliminate spam messages from your chat.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>66</Descripcion>
+                        <Descripcion>73</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1046,7 +1046,7 @@ The most important thing to keep in mind with these addons for World of Warcraft
                 <Descripcion>This addon opens all items that need to be opened automatically</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>230</Descripcion>
+                        <Descripcion>238</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1079,7 +1079,7 @@ The most important thing to keep in mind with these addons for World of Warcraft
                 <Descripcion>Customize WoW's Raid Frames &amp; Raid Style Party Frames</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>148.7K</Descripcion>
+                        <Descripcion>148.9K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1121,7 +1121,7 @@ The most important thing to keep in mind with these addons for World of Warcraft
                 <Descripcion>freely customize player, target, focus, boss, and pet health bar colors and textures</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>882.1K</Descripcion>
+                        <Descripcion>883.1K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1163,7 +1163,7 @@ The most important thing to keep in mind with these addons for World of Warcraft
                 <Descripcion>Add mouseover functionality to World of Warcraft's default Action Bars.</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>128.6K</Descripcion>
+                        <Descripcion>128.7K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -1202,7 +1202,7 @@ The most important thing to keep in mind with these addons for World of Warcraft
                 <Descripcion>Dark UI preset, but you can change any color as you like</Descripcion>
                 <Detalles>
                     <Detalle>
-                        <Descripcion>298.8K</Descripcion>
+                        <Descripcion>299.2K</Descripcion>
                     </Detalle>
                     <Detalle>
                         <Descripcion>Dec 4, 2023</Descripcion>
@@ -3498,16 +3498,10 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                         <Nombre>Mods</Nombre>
                     </Categoria>
                     <Categoria>
-                        <Nombre>Creatures</Nombre>
-                    </Categoria>
-                    <Categoria>
                         <Nombre>General</Nombre>
                     </Categoria>
                     <Categoria>
                         <Nombre>Creatures</Nombre>
-                    </Categoria>
-                    <Categoria>
-                        <Nombre>General</Nombre>
                     </Categoria>
                 </Categorias>
             </Mod>
@@ -3567,13 +3561,13 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                         <Nombre>Mods</Nombre>
                     </Categoria>
                     <Categoria>
+                        <Nombre>Weapons</Nombre>
+                    </Categoria>
+                    <Categoria>
                         <Nombre>Rebalancing</Nombre>
                     </Categoria>
                     <Categoria>
                         <Nombre>Structures</Nombre>
-                    </Categoria>
-                    <Categoria>
-                        <Nombre>Weapons</Nombre>
                     </Categoria>
                 </Categorias>
             </Mod>
@@ -3603,13 +3597,13 @@ Respawn into a new dinosaur survival experience beyond your wildest dreams… as
                         <Nombre>Mods</Nombre>
                     </Categoria>
                     <Categoria>
-                        <Nombre>Structures</Nombre>
-                    </Categoria>
-                    <Categoria>
                         <Nombre>General</Nombre>
                     </Categoria>
                     <Categoria>
                         <Nombre>Visuals and Sounds</Nombre>
+                    </Categoria>
+                    <Categoria>
+                        <Nombre>Structures</Nombre>
                     </Categoria>
                 </Categorias>
             </Mod>

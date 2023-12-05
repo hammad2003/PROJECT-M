@@ -2,52 +2,27 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
+/**
+ * Clase que representa un mod.
+ * Utilizada para almacenar información sobre mods, incluyendo detalles y categorías.
+ */
 @XmlRootElement
 public class Mod {
+
     private String projectName;
     private String author;
     private String projectDescription;
     private List<String> details;
-    private List<Categoria> categories; // Cambiado a List<Categoria>
+    private List<Categoria> categories;
 
-    // Getter and setter methods
-
-    @XmlElement(name = "projectName")
-    public String getProjectName() {
-        return projectName;
-    }
-
-    public void setProjectName(String projectName) {
-        this.projectName = projectName;
-    }
-
-    @XmlElement(name = "author")
-    public String getAuthor() {
-        return author;
-    }
-
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    @XmlElement(name = "projectDescription")
-    public String getProjectDescription() {
-        return projectDescription;
-    }
-
-    public void setProjectDescription(String projectDescription) {
-        this.projectDescription = projectDescription;
-    }
-
-    @XmlElement(name = "details")
-    public List<String> getDetails() {
-        return details;
-    }
-
-    public void setDetails(List<String> details) {
-        this.details = details;
-    }
-
+    /**
+     * Constructor con parámetros para crear una instancia de la clase {@code Mod}.
+     *
+     * @param projectName      El nombre del proyecto/mod.
+     * @param author           El autor del proyecto/mod.
+     * @param projectDescription La descripción del proyecto/mod.
+     * @param details           Los detalles del proyecto/mod.
+     */
     public Mod(String projectName, String author, String projectDescription, List<String> details) {
         this.projectName = projectName;
         this.author = author;
@@ -55,15 +30,106 @@ public class Mod {
         this.details = details;
     }
 
+    /**
+     * Obtiene el nombre del proyecto/mod.
+     *
+     * @return El nombre del proyecto/mod.
+     */
+    @XmlElement(name = "projectName")
+    public String getProjectName() {
+        return projectName;
+    }
+
+    /**
+     * Establece el nombre del proyecto/mod.
+     *
+     * @param projectName El nuevo nombre del proyecto/mod.
+     */
+    public void setProjectName(String projectName) {
+        this.projectName = projectName;
+    }
+
+    /**
+     * Obtiene el autor del proyecto/mod.
+     *
+     * @return El autor del proyecto/mod.
+     */
+    @XmlElement(name = "author")
+    public String getAuthor() {
+        return author;
+    }
+
+    /**
+     * Establece el autor del proyecto/mod.
+     *
+     * @param author El nuevo autor del proyecto/mod.
+     */
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    /**
+     * Obtiene la descripción del proyecto/mod.
+     *
+     * @return La descripción del proyecto/mod.
+     */
+    @XmlElement(name = "projectDescription")
+    public String getProjectDescription() {
+        return projectDescription;
+    }
+
+    /**
+     * Establece la descripción del proyecto/mod.
+     *
+     * @param projectDescription La nueva descripción del proyecto/mod.
+     */
+    public void setProjectDescription(String projectDescription) {
+        this.projectDescription = projectDescription;
+    }
+
+    /**
+     * Obtiene los detalles del proyecto/mod.
+     *
+     * @return Los detalles del proyecto/mod.
+     */
+    @XmlElement(name = "details")
+    public List<String> getDetails() {
+        return details;
+    }
+
+    /**
+     * Establece los detalles del proyecto/mod.
+     *
+     * @param details Los nuevos detalles del proyecto/mod.
+     */
+    public void setDetails(List<String> details) {
+        this.details = details;
+    }
+
+    /**
+     * Obtiene las categorías asociadas al proyecto/mod.
+     *
+     * @return Las categorías asociadas al proyecto/mod.
+     */
     @XmlElement(name = "categories")
     public List<Categoria> getCategories() {
         return categories;
     }
 
+    /**
+     * Establece las categorías asociadas al proyecto/mod.
+     *
+     * @param categories Las nuevas categorías asociadas al proyecto/mod.
+     */
     public void setCategories(List<Categoria> categories) {
         this.categories = categories;
     }
 
+    /**
+     * Devuelve una representación en cadena de la instancia actual de la clase {@code Mod}.
+     *
+     * @return Una cadena que representa el proyecto/mod y sus detalles, categorías, etc.
+     */
     @Override
     public String toString() {
         return "Mod{" +

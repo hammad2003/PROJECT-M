@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Clase PMCurseForge que realiza web scraping en el sitio web "https://curseforge.com/"
+ * Clase `PMCurseForge` que realiza web scraping en el sitio web "https://curseforge.com/"
  * para obtener información sobre juegos y sus respectivos mods.
  */
 public class PMCurseForge {

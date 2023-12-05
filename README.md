@@ -33,3 +33,6 @@ Este script de Web Scraping utiliza Selenium y Java para extraer información so
 - El script imprimirá información sobre los juegos y sus mods en la consola.
 
 ¡Disfruta explorando la información de CurseForge con este script de Web Scraping! Si encuentras problemas o necesitas mejoras, no dudes en ajustar el código según tus necesidades.
+
+## Diagrama de clases
+![](DiagramaDeClases.png)

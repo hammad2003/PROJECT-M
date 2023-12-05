@@ -13,13 +13,25 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.*;
 import java.util.List;
 
+/**
+ * Clase Controlador que gestiona la persistencia de datos en formatos XML y CSV.
+ * Permite guardar la información de juegos y mods en archivos XML y CSV.
+ */
 public class Controlador {
     List<Juego> juegos;
 
+    /**
+     * Constructor de la clase Controlador.
+     *
+     * @param juegos La lista de juegos a ser gestionada.
+     */
     public Controlador(List<Juego> juegos) {
         this.juegos = juegos;
     }
 
+    /**
+     * Guarda la información de juegos y mods en un archivo XML.
+     */
     public void guardarXML(){
 
         // En la siguiente variable es necesario poner la ruta en la que deseas guardar el fichero.
@@ -110,7 +122,9 @@ public class Controlador {
         }
     }
 
-
+    /**
+     * Guarda la información de juegos y mods en un archivo CSV.
+     */
     public void guardarCSV() {
 
         // En la siguiente variable es necesario poner la ruta en la que deseas guardar el fichero.
